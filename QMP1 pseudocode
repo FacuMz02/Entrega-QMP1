@@ -21,12 +21,11 @@ class Prenda{
 	var colorPrincipal
 	var colorSecundario	
 
-	method categoria()= tipo.categ
 
 	method bienCargada()= if((tipo.tipop && categoria && material && 
 				colorPrincipal)!=NULL) else throw exception()
 
-	//method categoriaCorrecta()= if(self.tipo.categ = categoria)
+	method categoriaCorrecta()= if(self.tipo.categ = categoria)
 					else throw exception()					
 }
 
