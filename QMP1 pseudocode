@@ -5,7 +5,6 @@ class Usuario{
 	method cargarprenda(prenda){
 		try{
 			prenda.bienCargada()
-			prenda.categoriaCorrecta()
 			self.prendas.add(prenda)
 		}
 		catch(error){
@@ -21,12 +20,11 @@ class Prenda{
 	var colorPrincipal
 	var colorSecundario	
 
+	method categoria()=tipo.categ
 
 	method bienCargada()= if((tipo.tipop && categoria && material && 
 				colorPrincipal)!=NULL) else throw exception()
-
-	method categoriaCorrecta()= if(self.tipo.categ = categoria)
-					else throw exception()					
+				
 }
 
 
