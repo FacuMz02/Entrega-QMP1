@@ -1,0 +1,38 @@
+class Usuario{
+
+	var prendas=[]	
+
+	method cargarprenda(prenda){
+		try{
+			prenda.bienCargada()
+			prenda.categoriaCorrecta()
+			self.prendas.add(prenda)
+		}
+		catch(error){
+			print("Prenda mal cargada")
+		}
+	}	
+}
+
+class Prenda{
+
+	var tipo
+	var material
+	var colorPrincipal
+	var colorSecundario	
+
+	method categoria()= tipo.categ
+
+	method bienCargada()= if((tipo.tipop && categoria && material && 
+				colorPrincipal)!=NULL) else throw exception()
+
+	//method categoriaCorrecta()= if(self.tipo.categ = categoria)
+					else throw exception()					
+}
+
+
+class tipoPrenda{
+
+	var tipop
+	var categ	
+}
